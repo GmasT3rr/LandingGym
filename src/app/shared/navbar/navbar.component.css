@@ -5,8 +5,8 @@
   transition: all 300ms;
 }
 .nav-link:hover{
-  padding-left: 15px;
-  margin-left: 10px;
+  padding-left: 7px;
+  margin-left: 7px;
   transition: all 300ms;
   color: #abd942;
   font-family: 'SUBTITULO';
@@ -23,9 +23,31 @@
   ;
 }
 .nav-link-scrolled .nav-link:hover {
+  padding-left: 7px;
+  margin-left: 7px;
   transition: all 300ms;
   color: black;
   font-family: 'SUBTITULO';
   background-color: #abd942;
   border-radius: 5px;
+}
+@media screen and (max-width:992) {
+  .nav-link:hover{
+    padding: 15px;
+    margin-top: 15px;
+    transition: all 300ms;
+    color: #abd942;
+    font-family: 'SUBTITULO';
+    background-color: black;
+    border-radius: 5px;
+  }
+  .nav-link-scrolled .nav-link:hover {
+    padding-left: 15px;
+    margin-left: 15px;
+    transition: all 300ms;
+    color: black;
+    font-family: 'SUBTITULO';
+    background-color: #abd942;
+    border-radius: 5px;
+  }
 }
