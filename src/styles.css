@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --main-bg-color:red;
+}
+@font-face {
+  font-family: 'TITULO';
+  src: url('assets\fonts\BlackOpsOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'FRASE';
+  src: url('assets\fonts\RacingSansOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'SUBTITULO';
+  src: url('assets\fonts\Staatliches-Regular.ttf');
+}
+@font-face {
+  font-family: 'CONTENIDO';
+  src: url('assets\fonts\OrelegaOne-Regular.ttf');
+}

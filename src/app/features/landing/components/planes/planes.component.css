@@ -1,0 +1,162 @@
+.__background {
+  background: linear-gradient(0deg, #2c3834, #1d2525, #182021);
+  width: 100%;
+  position: relative;
+  padding: 4rem;
+}
+
+.__title,
+.__plan_top,
+.__plan_precio,
+.__plan_botom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.__plan_precio{
+  border-radius: 5px;
+}
+.__plan_top{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.__plan_botom{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* ------------------------------ */
+
+.__title {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-family: "TITULO";
+  font-size: 3rem;
+}
+/* ------------------------------ */
+
+.__plan_top.one {
+  background-color: #080907;
+  color: white;
+  font-family: "SUBTITULO";
+  line-height: 3rem;
+}
+.__plan_nombre.one {
+  font-size: 3.2rem;
+  color: #abd942;
+}
+.__plan_precio.one {
+  background-color: #abd942;
+  font-size: 3.2rem;
+  line-height: 3rem;
+  margin-bottom: -2.5rem;
+}
+.__plan_botom.one {
+  background-color: white;
+  color: black;
+  font-family: "CONTENIDO";
+  height: 250px;
+}
+/* ------------------------------ */
+.__plan_top.two {
+  background-color: #abd942;
+  color: white;
+  font-family: "SUBTITULO";
+  line-height: 3rem;
+}
+.__plan_nombre.two {
+  font-size: 3.2rem;
+  color: #080907;
+}
+.__plan_precio.two {
+  background-color: #080907;
+  font-size: 3.2rem;
+  line-height: 3rem;
+  margin-bottom: -2.5rem;
+}
+.__plan_botom.two {
+  background-color: white;
+  color: black;
+  font-family: "CONTENIDO";
+  height: 250px;
+}
+
+@media screen and (max-width: 425px) {
+  .__title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .__plan_top.one,
+  .__plan_top.two {
+    line-height: 0.9rem;
+  }
+  .__plan_nombre.one,
+  .__plan_nombre.two {
+    font-size: 2rem;
+  }
+  .__plan_precio.one,
+  .__plan_precio.two {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin-bottom: -2.2rem;
+  }
+  .__plan_botom.one,
+  .__plan_botom.two {
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 575px) {
+  .__title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .__plan_top.one,
+  .__plan_top.two {
+    line-height: 0.9rem;
+  }
+  .__plan_nombre.one,
+  .__plan_nombre.two {
+    font-size: 2rem;
+  }
+  .__plan_precio.one,
+  .__plan_precio.two {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin-bottom: -2.2rem;
+  }
+  .__plan_botom.one,
+  .__plan_botom.two {
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 1000px){
+  .__title {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .__plan_top.one,
+  .__plan_top.two {
+    line-height: 0.9rem;
+  }
+  .__plan_nombre.one,
+  .__plan_nombre.two {
+    font-size: 2rem;
+  }
+  .__plan_precio.one,
+  .__plan_precio.two {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: -2.2rem;
+  }
+  .__plan_botom.one,
+  .__plan_botom.two {
+    height: 320px;
+  }
+}
+
