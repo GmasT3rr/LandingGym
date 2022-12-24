@@ -1,0 +1,87 @@
+.__background,.__titulo,.carousel-item,.__before_after,.__carousel_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.__titulo {
+  font-family: "TITULO";
+  font-size: 3rem;
+  padding: 3rem;
+  background-color: #abd942 ;
+}
+.__before_after{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.__imagen {
+  width: 100%;
+  box-shadow: 10px 10px 10px -3px rgba(0,0,0,.5);
+  border-radius: 10px;
+  position: relative;
+}
+p{
+  font-family: 'SUBTITULO';
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+    margin: 1rem;
+}
+strong{
+  font-family: 'CONTENIDO';
+}
+.carousel {
+  height: 40rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width:340px) and (max-width:430px) {
+
+  /* external css: flickity.css */
+  .carousel {
+    height: 40rem;
+    margin-bottom:4rem;
+  }
+
+}
+@media screen and (min-width:430px) and (max-width:768px) {
+
+  /* external css: flickity.css */
+  .carousel {
+    height: 50rem;
+    margin-bottom:4rem;
+  }
+
+}
+@media screen and (min-width:768px) and (max-width:990px) {
+
+  /* external css: flickity.css */
+  .carousel {
+    height: 25rem;
+    margin-bottom: 5rem;
+  }
+
+}
+@media screen and (min-width:990px) and (max-width:1400px) {
+
+  /* external css: flickity.css */
+  .carousel {
+    height: 35rem;
+    margin-bottom: 5rem;
+  }
+
+}
+@media screen and (max-width:768px) {
+  p{
+    font-family: 'SUBTITULO';
+      font-size: 1.3rem;
+      line-height: 1.1rem;
+      margin: 1rem;
+  }
+  /* external css: flickity.css */
+
+}
+
+
+
+
+

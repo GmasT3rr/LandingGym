@@ -5,12 +5,20 @@ import { FeaturesRoutingModule } from './features-routing.module';
 import { LandingComponent } from './landing/landing.component';
 import { SharedModule } from '../shared/shared.module';
 import { PlanesComponent } from './landing/components/planes/planes.component';
+import { NosotrosComponent } from './landing/components/nosotros/nosotros.component';
+import { InicioComponent } from './landing/components/inicio/inicio.component';
+import { CambiosFisicosComponent } from './landing/components/cambios-fisicos/cambios-fisicos.component';
+import { FormularioComponent } from './landing/components/formulario/formulario.component';
 
 
 @NgModule({
   declarations: [
     LandingComponent,
-    PlanesComponent
+    PlanesComponent,
+    NosotrosComponent,
+    InicioComponent,
+    CambiosFisicosComponent,
+    FormularioComponent
   ],
   imports: [
     CommonModule,
