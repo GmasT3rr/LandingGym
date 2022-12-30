@@ -14,7 +14,7 @@ export class NavbarComponent  {
 
   onWindowScroll() {
     let element = document.querySelector('.navbar') as HTMLElement;
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 100) {
       element.classList.add('navbar-scrolled','nav-link-scrolled');
     } else {
       element.classList.remove('navbar-scrolled','nav-link-scrolled');

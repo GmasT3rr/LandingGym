@@ -1,0 +1,85 @@
+.__background,.__titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.__background{
+  background: linear-gradient(0deg, #2c3834, #1d2525, #182021);
+  padding: 3rem;
+}
+
+.__titulo {
+  font-family: "TITULO";
+  font-size: 3rem;
+  color: #acd942;
+}
+
+.__nombre_input{
+  margin-bottom: .5rem;
+  float: center;
+  color: #acd942;
+  font-family: 'CONTENIDO';
+  font-size: 1rem;
+}
+.__error_input{
+  margin-top: .5rem;
+  float: center;
+  color: white;
+  font-family: 'CONTENIDO';
+  font-size: 1rem;
+}
+
+.__enviar{
+  margin-top: 1rem;
+  font-family: 'SUBTITULO';
+  font-size: 1.5rem;
+  background-color: #acd942;
+  color: black;
+  border-radius: 5px;
+  padding: .5rem;
+  cursor: pointer;
+  transition: all 100ms;
+
+}
+.__enviar:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+  transition: all 100ms;
+
+}
+.__contactado{
+  margin-top: 1rem;
+  font-family: 'SUBTITULO';
+  font-size: 1.5rem;
+  background-color: black;
+  color: #acd942;
+  border-radius: 5px;
+  padding: .5rem;
+  transition: all 100ms;
+}
+/*  */
+@media screen and (max-width: 425px) {
+  .__titulo {
+    font-size: 1.5rem;
+  }
+  .__enviar{
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 575px) {
+  .__titulo {
+    font-size: 1.7rem;
+  }
+  .__enviar{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 1000px) {
+  .__titulo {
+    font-size: 2rem;
+  }
+  .__enviar{
+    font-size: 1.5rem;
+  }
+}

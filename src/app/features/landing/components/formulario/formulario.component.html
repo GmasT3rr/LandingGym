@@ -1,19 +1,136 @@
-<div class="__background " style="background-color: blue;opacity: .5;">
+<div class="__background" id="contactanos">
   <div class="container">
+    <div class="__titulo"><p>CONTÁCTANOS</p></div>
     <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-8 my-5">
-        <form action="">
-          <div class="mt-2 mb-2">
+      <div class="col-md-8 col-xl-6 __formulario">
+        <form
+          class="row justify-content-center"
+          [formGroup]="contactanosForm"
+          (ngSubmit)="enviarDatos()"
+        >
+          <!--  -->
+          <div class="my-2 col-md-6">
+            <label class="__nombre_input">Nombre</label>
             <input
               type="text"
               maxlength="25"
               class="form-control"
               formControlName="nombre"
-              placeholder="Nombre: "
+            />
+            <label
+              class="__error_input"
+              *ngIf="
+                contactanosForm.controls['nombre'].touched &&
+                contactanosForm.controls['nombre'].invalid
+              "
+              >* Este campo es obligatorio</label
+            >
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="my-2 col-md-6">
+            <label class="__nombre_input">Apellido</label>
+            <input
+              type="text"
+              maxlength="25"
+              class="form-control"
+              formControlName="apellido"
+            />
+            <label
+              class="__error_input"
+              *ngIf="
+                contactanosForm.controls['apellido'].touched &&
+                contactanosForm.controls['apellido'].invalid
+              "
+              >* Este campo es obligatorio</label
+            >
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="my-2">
+            <label class="__nombre_input">Teléfono</label>
+            <input
+              type="number"
+              maxlength="25"
+              class="form-control"
+              formControlName="telefono"
+            />
+            <label
+              class="__error_input"
+              *ngIf="
+                contactanosForm.controls['telefono'].touched &&
+                contactanosForm.controls['telefono'].invalid
+              "
+              >* Este campo es obligatorio</label
+            >
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="my-2">
+            <label class="__nombre_input">Email</label>
+            <input
+              type="text"
+              maxlength="25"
+              class="form-control"
+              formControlName="email"
+            />
+            <label
+              class="__error_input"
+              *ngIf="
+                contactanosForm.controls['email'].touched &&
+                contactanosForm.controls['email'].invalid
+              "
+              >* Este campo es obligatorio</label
+            >
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="my-2">
+            <label class="__nombre_input">Plan</label>
+            <select formControlName="plan" class="form-select">
+              <option value="" selected disabled hidden></option>
+              <option value="Plan mensual">Plan mensual</option>
+              <option value="Plan trimestral">Plan trimestral</option>
+            </select>
+            <label
+              class="__error_input"
+              *ngIf="
+                contactanosForm.controls['plan'].touched &&
+                contactanosForm.controls['plan'].invalid
+              "
+              >* Este campo es obligatorio</label
+            >
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="my-2">
+            <label class="__nombre_input">Consideraciones</label>
+            <textarea
+              formControlName="consideraciones"
+              class="form-control"
+              cols="15"
+              rows="5"
+            ></textarea>
+          </div>
+          <!--  -->
+          <div class="d-flex justify-content-center" *ngIf="!yaEnviado else Else">
+            <input
+              [disabled]="!contactanosForm.valid"
+              class="__enviar col-6 col-xl-3"
+              type="submit"
+              placeholder="a"
             />
           </div>
         </form>
+        <ng-template  #Else >
+          <div class="row d-flex justify-content-center">
+            <div  class="col-lg-6 __contactado">¡GRACIAS POR CONTACTARTE!</div>
+              <label class="__error_input">Debe esperar para poder volver a contactarse</label>
+          </div>
+
+        </ng-template>
       </div>
     </div>
+    <!--  -->
   </div>
 </div>

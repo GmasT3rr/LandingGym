@@ -1,3 +1,6 @@
+.__background{
+  background-color: #fafafa;
+}
 .__background,.__titulo,.carousel-item,.__before_after,.__carousel_content{
   display: flex;
   align-items: center;
@@ -7,7 +10,7 @@
 .__titulo {
   font-family: "TITULO";
   font-size: 3rem;
-  padding: 3rem;
+  padding: 5rem;
   background-color: #abd942 ;
 }
 .__before_after{
@@ -20,7 +23,7 @@
   border-radius: 10px;
   position: relative;
 }
-p{
+.__carousel_content p{
   font-family: 'SUBTITULO';
     font-size: 1.7rem;
     line-height: 1.6rem;
@@ -41,7 +44,6 @@ strong{
     height: 40rem;
     margin-bottom:4rem;
   }
-
 }
 @media screen and (min-width:430px) and (max-width:768px) {
 
@@ -50,7 +52,6 @@ strong{
     height: 50rem;
     margin-bottom:4rem;
   }
-
 }
 @media screen and (min-width:768px) and (max-width:990px) {
 
@@ -59,7 +60,6 @@ strong{
     height: 25rem;
     margin-bottom: 5rem;
   }
-
 }
 @media screen and (min-width:990px) and (max-width:1400px) {
 
@@ -71,14 +71,32 @@ strong{
 
 }
 @media screen and (max-width:768px) {
-  p{
+  .__carousel_content p{
     font-family: 'SUBTITULO';
       font-size: 1.3rem;
       line-height: 1.1rem;
       margin: 1rem;
   }
   /* external css: flickity.css */
+}
 
+@media screen and (max-width: 425px) {
+  .__titulo {
+    font-size: 1.5rem;
+  }
+
+}
+@media screen and (min-width: 425px) and (max-width: 575px) {
+  .__titulo {
+    font-size: 1.7rem;
+
+  }
+
+}
+@media screen and (min-width: 575px) and (max-width: 1000px) {
+  .__titulo {
+    font-size: 2rem;
+  }
 }
 
 

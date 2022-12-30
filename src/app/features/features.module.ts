@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { FeaturesRoutingModule } from './features-routing.module';
 import { LandingComponent } from './landing/landing.component';
@@ -18,12 +19,13 @@ import { FormularioComponent } from './landing/components/formulario/formulario.
     NosotrosComponent,
     InicioComponent,
     CambiosFisicosComponent,
-    FormularioComponent
+    FormularioComponent,
   ],
   imports: [
     CommonModule,
     FeaturesRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   exports:[
     LandingComponent
